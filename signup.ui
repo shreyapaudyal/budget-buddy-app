@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>signup</class>
+ <widget class="QDialog" name="signup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BudgetBuddy - Signup</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    background-color: rgb(202, 219, 194);
+   </string>
+  </property>
+  <widget class="QLabel" name="labelTitle">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>130</y>
+     <width>431</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 700 35pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+    </string>
+   </property>
+   <property name="text">
+    <string>Create an Account</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelUsername">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>230</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+    </string>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditUsername">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>230</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 11pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+     background: white;
+     border: 2px solid black;
+     border-radius: 6px;
+     padding-left: 8px;
+    </string>
+   </property>
+   <property name="placeholderText">
+    <string>Enter username</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPassword">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>280</y>
+     <width>100</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+    </string>
+   </property>
+   <property name="text">
+    <string>Password:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPassword">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>280</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 11pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+     background: white;
+     border: 2px solid black;
+     border-radius: 6px;
+     padding-left: 8px;
+    </string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Enter password</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxShowPassword">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>280</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 10pt &quot;Segoe UI&quot;;
+     color: black;
+    </string>
+   </property>
+   <property name="text">
+    <string>Show password</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelConfirmPwd">
+   <property name="geometry">
+    <rect>
+     <x>419</x>
+     <y>330</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+    </string>
+   </property>
+   <property name="text">
+    <string>Confirm Password:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditConfirmPwd">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>330</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 11pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+     background: white;
+     border: 2px solid black;
+     border-radius: 6px;
+     padding-left: 8px;
+    </string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Re-enter password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonCreateAccount">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>400</y>
+     <width>200</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 700 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+    
+background-color: rgb(147, 147, 147);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="text">
+    <string>SIGN UP</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

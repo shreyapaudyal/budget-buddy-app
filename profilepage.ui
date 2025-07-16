@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>profilepage</class>
+ <widget class="QDialog" name="profilepage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1282</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BudgetBuddy - Profile</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    background-color: rgb(202, 219, 194);
+   </string>
+  </property>
+  <widget class="QLabel" name="labelWelcome">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>60</y>
+     <width>600</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+    
+font: 700 40pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+    </string>
+   </property>
+   <property name="text">
+    <string>Welcome [USER]</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelPhoto">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>130</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 10pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+     background: white;
+     border: 2px solid black;
+     border-radius: 10px;
+    </string>
+   </property>
+   <property name="text">
+    <string>[Photo]</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonChangePhoto">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>350</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 14pt &quot;Segoe UI&quot;;
+background-color: #FFFFF0;
+    
+ 
+
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+    </string>
+   </property>
+   <property name="text">
+    <string>Change Photo</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonChangePassword">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>400</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 14pt &quot;Segoe UI&quot;;
+background-color: #FFFFF0;
+    
+ 
+
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+    </string>
+   </property>
+   <property name="text">
+    <string>    Change Password</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonBack">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>450</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 14pt &quot;Segoe UI&quot;;
+background-color: #FFFFF0;
+   color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+    </string>
+   </property>
+   <property name="text">
+    <string>Back to Homepage</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonLogout">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>500</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 14pt &quot;Segoe UI&quot;;
+background-color: rgb(184, 184, 184);
+    
+ 
+
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+    </string>
+   </property>
+   <property name="text">
+    <string>LOG OUT</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

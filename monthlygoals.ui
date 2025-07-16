@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>monthlygoals</class>
+ <widget class="QDialog" name="monthlygoals">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BudgetBuddy - Monthly Goals</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    background-color: rgb(202, 219, 194);
+   </string>
+  </property>
+  <widget class="QLabel" name="labelTitle">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>80</y>
+     <width>321</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 700 35pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>Set Monthly Goals</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMonth">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>180</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 14pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>Select Month:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxMonth">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>180</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+  
+     font: 600 12pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelYear">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>240</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 14pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>Select Year:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxYear">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>240</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+  
+     font: 600 12pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="minimum">
+    <number>2000</number>
+   </property>
+   <property name="maximum">
+    <number>2030</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>300</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 14pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>Input Budget:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditAmount">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>300</y>
+     <width>200</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 11pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+     padding-left: 8px;
+   </string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::InputMethodHint::ImhDigitsOnly</set>
+   </property>
+   <property name="placeholderText">
+    <string>Amount</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonSubmit">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>380</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 700 14pt &quot;Segoe UI&quot;;
+  
+background-color: rgb(170, 170, 170);
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="text">
+    <string>SUBMIT</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>viewtransactions</class>
+ <widget class="QDialog" name="viewtransactions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1282</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BudgetBuddy - View Transactions</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    background-color: rgb(202, 219, 194);
+   </string>
+  </property>
+  <widget class="QLabel" name="labelTitle">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>40</y>
+     <width>501</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 700 35pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>YOUR TRANSACTIONS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelType">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>100</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>Type:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxTypeFilter">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>100</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+   
+     font: 600 12pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCategory">
+   <property name="geometry">
+    <rect>
+     <x>639</x>
+     <y>100</y>
+     <width>91</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>Category:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxCategoryFilter">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>100</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+   
+     font: 600 12pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelFrom">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>160</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>From:</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditFrom">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>160</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 12pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTo">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>160</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+     color: rgb(0, 0, 0);
+   </string>
+   </property>
+   <property name="text">
+    <string>To:</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditTo">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>160</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     
+     font: 600 12pt &quot;Segoe UI&quot;;
+     background: white;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonApplyFilter">
+   <property name="geometry">
+    <rect>
+     <x>549</x>
+     <y>220</y>
+     <width>191</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+background-color: #FFFFF0;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="text">
+    <string>Apply Filter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonClearFilter">
+   <property name="geometry">
+    <rect>
+     <x>759</x>
+     <y>220</y>
+     <width>191</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+background-color: #FFFFF0;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="text">
+    <string>Clear Filter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonExport">
+   <property name="geometry">
+    <rect>
+     <x>339</x>
+     <y>220</y>
+     <width>191</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 600 16pt &quot;Segoe UI&quot;;
+background-color: #FFFFF0;
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="text">
+    <string>Export Transactions</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidgetTransactions">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>270</y>
+     <width>920</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonBack">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>550</y>
+     <width>221</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+     font: 700 16pt &quot;Segoe UI&quot;;
+    background-color: rgb(189, 189, 189);
+     color: rgb(0, 0, 0);
+     border: 2px solid black;
+     border-radius: 6px;
+   </string>
+   </property>
+   <property name="text">
+    <string>BACK TO HOMEPAGE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
